@@ -3,6 +3,13 @@ let coin = {
     flip: function() {
         /* 1. Randomly set your coin object's "state" property to be either 
            0 or 1: use "this.state" to access the "state" property on this object.*/
+        let flippingCoin = Math.random()
+        if (flippingCoin < 0.5){
+            this.state = 0
+        } else {
+            this.state = 1
+        }
+
     },
     toString: function() {
         /* 2. Return the string "Heads" or "Tails", depending on whether
