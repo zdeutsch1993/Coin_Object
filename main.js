@@ -14,4 +14,6 @@ let coin = {
            or face-down, depending on whether this.state is 0 or 1.*/
         return image;
     }
+    display20Flips function (){}
+    diaplay20Images function (){}
 };
