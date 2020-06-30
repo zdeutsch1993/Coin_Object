@@ -14,13 +14,17 @@ let coin = {
     toString: function() {
         /* 2. Return the string "Heads" or "Tails", depending on whether
            "this.state" is 0 or 1. */
+           if(this.state === 0) {
+           return 'Heads'
+           } else if(this.state === 1) {
+            return 'Tails'
+           } 
     },
     toHTML: function() {
-        let image = document.createElement('img');
+        const image = document.createElement('img');
+        document.body.appendChild(image)
         /* 3. Set the properties of this image element to show either face-up
            or face-down, depending on whether this.state is 0 or 1.*/
         return image;
     }
-    display20Flips function (){}
-    diaplay20Images function (){}
 };
