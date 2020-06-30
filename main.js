@@ -1,7 +1,5 @@
 const newMain = document.createElement('main');
 document.body.appendChild(newMain)
-let image = document.createElement('img');
-newMain.appendChild(image)
 let coin = {
     state: 0,
     flip: function() {
@@ -27,6 +25,16 @@ let coin = {
     toHTML: function() {
         /* 3. Set the properties of this image element to show either face-up
            or face-down, depending on whether this.state is 0 or 1.*/
-           return image;
+        let image = document.createElement('img');
+            if(this.state === 0){
+            newMain.append(image)
+            image.src = './images/heads.jpg' 
+            } else if (this.state === 1){
+            newMain.append(image)
+            image.src = './images/tails.jpg'
+        }
+           return image
     }
+    function display20Flips(){}
+    function display20Images(){}
 }
